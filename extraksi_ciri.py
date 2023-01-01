@@ -42,8 +42,6 @@ def color_extraction(folder_path, writer):
         # jalnankan format ke excel
         for worksheet in workbook.worksheets():
             worksheet.set_column('A:D', 11.78, formats)
-            # formats.set_align('left')
-            # worksheet.set_column('A:A', 11.78, formats)
 
 # Variabel berisi PATH menuju lokasi dataset
 folder_path = 'D:\Kuliah\Semester 3\Pengolahan Citra Digital\Dataset Daging\Dataset Daging'
