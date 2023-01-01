@@ -1,7 +1,6 @@
 import os, cv2, xlsxwriter
 import pandas as pd, imageio.v2 as imageio, numpy as np
-# import imageio.v2 as imageio
-# import numpy as np
+
 
 # define the function
 def color_extraction(folder_path, writer):
