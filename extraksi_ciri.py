@@ -18,9 +18,10 @@ def color_extraction(folder_path, writer):
         red_channel, blue_channel, green_channel = cv2.split(image)
 
         # Penghitungan Rata - Rata
+        # Pastikan urutan penghitungan rata - rata sama dengan urutan pemisahan channel
         red_average = np.average(red_channel)
-        green_average = np.average(green_channel)
         blue_average = np.average(blue_channel)
+        green_average = np.average(green_channel)
 
         # Filename tanpa Path
         # file_name = os.path.basename(file)
