@@ -46,7 +46,7 @@ def color_extraction(folder_path, writer):
 # Variabel berisi PATH menuju lokasi dataset
 folder_path = 'D:\Kuliah\Semester 3\Pengolahan Citra Digital\Dataset Daging\Dataset Daging'
 
-# Overwrite Data Spreadsheet Tiap Run untuk menghindari error Pemrission Denied
+# Overwrite Data Spreadsheet Tiap Run 
 with pd.ExcelWriter('Color Extractions.xlsx',  engine='xlsxwriter') as writer:
     # Pemanggilan fungsi def
     color_extraction(folder_path, writer)
