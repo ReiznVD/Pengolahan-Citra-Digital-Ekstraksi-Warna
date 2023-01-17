@@ -12,7 +12,7 @@ def color_extraction(folder_path, writer):
 
     # Pengulangan untuk pengambilan data, pemisahan menjadi 3 channels, penghitungan rata - rata, Pemasukan data ke dalam list Kosong 
     for file in filenames:
-        image = imageio.imread(os.path.join(folder_path, file))
+        image = cv2.imread(os.path.join(folder_path, file))
 
         # Pemisahan Channel Gambar
         red_channel, green_channel, blue_channel = cv2.split(image)
