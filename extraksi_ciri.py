@@ -1,5 +1,5 @@
 import os, cv2, xlsxwriter
-import pandas as pd, imageio.v2 as imageio, numpy as np
+import pandas as pd, numpy as np
 
 
 # define the function
@@ -50,3 +50,7 @@ folder_path = 'D:\Kuliah\Semester 3\Pengolahan Citra Digital\Dataset Daging\Data
 with pd.ExcelWriter('Color Extractions.xlsx',  engine='xlsxwriter') as writer:
     # Pemanggilan fungsi def
     color_extraction(folder_path, writer)
+
+
+
+print("Generating color extractions.xlsx...")
